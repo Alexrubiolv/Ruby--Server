@@ -99,6 +99,3 @@ Add the target host:
 server 'your_host_address', user: 'deploy', roles: %w{app db web}
 ```
 
-## Feedback
-
-Feel free to send feedback or report problems via GitHub issues!
