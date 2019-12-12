@@ -1,6 +1,6 @@
 ---
 # Server Timzone + Locale
-timezone: Europe/Berlin
+timezone: Europe/Riga
 locale: en_US.UTF-8
 
 # Swap
