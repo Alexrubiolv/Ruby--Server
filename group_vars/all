@@ -12,9 +12,9 @@ swap_file_size_kb: 1024
 # General settings
 deploy_dir: /home/deploy/
 deploy_user: deploy
-deploy_password: SET_PASSWORD_HERE
-deploy_app_name: SET_APP_NAME_HERE
-deploy_server_hostname: SET_APP_HOSTNAME_HERE
+deploy_password: Ansible1976@@
+deploy_app_name: Ansible1976@@
+deploy_server_hostname: rubytest
 shared_dirs:
   - releases
   - repo
@@ -30,7 +30,7 @@ nginx_https_enabled: true
 # Certbot
 certbot_url: https://dl.eff.org/certbot-auto
 certbot_dir: /opt/certbot
-certbot_email: SET_EMAIL_HERE
+certbot_email: alex.rubio@mogo-bc.com
 
 # Authorized Hosts
 # This copies your local public key to the remote machine
@@ -39,8 +39,8 @@ ssh_public_key_files:
   - /Users/SET_YOUR_LOCAL_USERNAME_HERE/.ssh/id_rsa.pub
 
 # MySQL
-mysql_root_db_password: SET_PASSWORD_HERE
-mysql_app_db_password: SET_PASSWORD_HERE
+mysql_root_db_password: Ansible1976@@
+mysql_app_db_password: Ansible1976@@
 
 # Ruby
 ruby_install_version: 0.6.1
