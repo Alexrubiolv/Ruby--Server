@@ -18,10 +18,17 @@
       raw: update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
     - name: apt-get common
       raw: sudo apt-get install software-properties-common
-    - name: apt-get common
+    - name: apt-get rvm
       raw: sudo apt-add-repository -y ppa:rvm/rvm
       raw: sudo apt-get update
       raw: sudo apt-get install rvm
+      - name: apt-get xvfb
+      raw: sudo apt-get install xorg 
+      raw: sudo apt-get install xvfb
+      raw: sudo apt-get install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
+      - name: apt-get bundler
+      raw: gem install bundler -v 1.17.3
+      raw: sudo apt-get install libcurl4-openssl-dev
   roles:
     - common
     - deploy-user
