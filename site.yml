@@ -16,8 +16,17 @@
       raw: apt-get install -qq python2.7 aptitude
     - name: set python 2.7 as default
       raw: update-alternatives --install /usr/bin/python python /usr/bin/python2.7 1
+    - name: apt-get udate
+      raw: sudo apt-get update
+    - name: install rvm
+      raw: sudo apt-get install rvm
+      raw: rvm install 2.5.3
+      raw: sudo mkdir /var/www/rubie
+      raw: sudo chown username:username /var/www/rubie
     - name: apt-get common
       raw: sudo apt-get install software-properties-common
+      raw: git clone https://github.com/rvm/ubuntu_rvm
+      raw: sudo apt-add-repository -y ppa:rael-gc/rvm
     - name: apt-get rvm
       raw: sudo apt-add-repository -y ppa:rvm/rvm
       raw: sudo apt-get update
