@@ -14,7 +14,7 @@ deploy_dir: /home/deploy/
 deploy_user: deploy
 deploy_password: Ansible1976@@
 deploy_app_name: Ansible1976@@
-deploy_server_hostname: rubi
+deploy_server_hostname: rubie
 shared_dirs:
   - releases
   - repo
@@ -36,7 +36,7 @@ certbot_email: alex.rubio@mogo-bc.com
 # This copies your local public key to the remote machine
 # for passwordless login. Modify this!
 ssh_public_key_files:
-  - /etc/ansible/keys/keys.pub
+  - /etc/ansible/keys/id_rsa.pub
 
 # MySQL
 mysql_root_db_password: Ansible1976@@
