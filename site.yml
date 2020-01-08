@@ -44,7 +44,6 @@
     roles:
     - common
     - deploy-user
-    - mysql
     - nginx
     - certbot
     - ruby
