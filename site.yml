@@ -22,14 +22,17 @@
       raw: sudo apt-add-repository -y ppa:rvm/rvm
       raw: sudo apt-get update
       raw: sudo apt-get install rvm
-      - name: apt-get xvfb
+    - name: apt-get xvfb
       raw: sudo apt-get install xorg 
       raw: sudo apt-get install xvfb
       raw: sudo apt-get install xfonts-100dpi xfonts-75dpi xfonts-scalable xfonts-cyrillic
-      - name: apt-get bundler
+    - name: apt-get bundler
       raw: gem install bundler -v 1.17.3
       raw: sudo apt-get install libcurl4-openssl-dev
-  roles:
+    - name: sudo apt-get install curl
+      raw: apt-get install curl
+    
+    roles:
     - common
     - deploy-user
     - mysql
