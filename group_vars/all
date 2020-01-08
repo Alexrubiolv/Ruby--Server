@@ -14,7 +14,7 @@ deploy_dir: /home/deploy/
 deploy_user: deploy
 deploy_password: Ansible1976@@
 deploy_app_name: Ansible1976@@
-deploy_server_hostname: rubytest
+deploy_server_hostname: rubi
 shared_dirs:
   - releases
   - repo
@@ -48,7 +48,7 @@ chruby_version: 0.3.9
 ruby_version: 2.5.3
 
 # Rails
-rails_secret_key_base: SET_RAILS_SECRET_KEY_BASE_HERE
+rails_secret_key_base: 409B6B1796C275462A1703113804BB82D39DC0E3 \ 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 puma_workers: 4
 puma_threads: 4,16
 
